@@ -8,7 +8,7 @@ edition = "2018"
 license = "MIT"
 
 [dependencies]
-pango = { git = "https://github.com/gtk-rs/gtk-rs-core.git", package = "pango" }
+#pango = { git = "https://github.com/gtk-rs/gtk-rs-core.git", package = "pango" }
 backtrace = "0.3.32"
 compresstimator = { git = "https://github.com/Freaky/compresstimator.git", rev = "26ddd3f499bc46f2c8b3ce814e9723ed41b47919" }
 crossbeam-channel = "0.5"
