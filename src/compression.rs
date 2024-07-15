@@ -44,7 +44,7 @@ fn handle_file(file: &PathBuf, compression: Option<Compression>) -> io::Result<b
 
     let ret = match compression {
         Some(compression) => match est.compresstimate(&handle, meta.len()) {
-            Ok(ratio) if ratio < 0.95 => compact::compress_file_handle(&handle, compression),
+            Ok(ratio) if ratio < 0.99 => compact::compress_file_handle(&handle, compression),
             Ok(_) => Ok(false),
             Err(e) => Err(e),
         },
